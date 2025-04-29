@@ -38,7 +38,7 @@ Manually copying file trees and the contents of multiple source files into a Lar
 
 The generated output follows this structure:
 
-
+```
 YourSelectedFolderName/
 └── file1.txt
 ├── subfolder/
@@ -68,6 +68,7 @@ Project Title
 
 This is the readme content.
 === FILE CONTENT END ===
+```
 
 ## Technology Used 💻
 
