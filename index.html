@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Context Generator</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.5; padding: 20px; }
+        #output {
+            white-space: pre; /* Preserve whitespace and line breaks */
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+            max-height: 60vh; /* Limit height and make scrollable */
+            overflow-y: auto; /* Enable vertical scrollbar */
+            font-family: monospace; /* Use monospace font for code/tree */
+        }
+        button { padding: 10px 15px; font-size: 1em; cursor: pointer; }
+        #status { margin-top: 10px; color: #555; }
+        textarea { /* Alternative output display, easier copying */
+            width: 95%;
+            height: 60vh;
+            margin-top: 15px;
+            font-family: monospace;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Folder Context Generator for LLMs</h1>
+    <p>Select a project folder. The tool will generate a file tree and include the content of common text files.</p>
+
+    <button id="selectFolderBtn">Select Folder</button>
+    <button id="copyBtn" style="display: none;">Copy to Clipboard</button>
+
+    <div id="status">Status: Waiting for folder selection...</div>
+
+    <!-- Use a textarea for easy copying -->
+    <textarea id="outputArea" readonly placeholder="Generated context will appear here..."></textarea>
+    <!-- Or use a <pre> tag if you prefer direct display -->
+    <!-- <pre id="output"></pre> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
