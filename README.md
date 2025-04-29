@@ -94,7 +94,7 @@ This tool relies on the File System Access API, which is supported in most moder
 
 ## Contributing 🙌
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/louiskaneko34m/ContextCraft/issues) (replace with your actual repo link).
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/louiskaneko34m/ContextCraft/issues)
 
 ## License 📄
 
